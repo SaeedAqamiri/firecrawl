@@ -1,0 +1,16 @@
+version: 1
+updated: '2026-09-29T11:21:45.136Z'
+entries:
+  .:
+    summary: >-
+      Firecrawl monorepo was evaluated (Sep 2026) as the scraping engine for ekhtebar.ir Iranian
+      laws; verdict: NOT used — repo has no node_modules (never built locally) and self-hosting
+      needs Redis+pnpm+workers, overkill for static WordPress pages. The actual implementation lives
+      OUTSIDE this repo at ~/hayula/laws-mcp (Python FastMCP server, direct httpx scraping,
+      pdftotext + GLM vision OCR via ZAI_API_KEY). Registered in ~/.config/opencode/opencode.jsonc
+      as 'iran-laws'. If firecrawl is ever wanted there, laws-mcp/server.py already has a
+      FIRECRAWL_URL env passthrough (POST /v1/scrape).
+    confidence: verified
+    based_on:
+      - README.md@25492-1790671652533
+      - apps/api
